@@ -3,14 +3,14 @@ import "./App.css";
 import CitizenServices from "../../services/brastlewark.services";
 import { Switch, Route } from "react-router-dom";
 
-
 import Gnomes from "../Gnomes/gnomeCitizens";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {filteredGnomes: {}};
     this.cityService = new CitizenServices();
+    
   }
 
   componentDidMount = () => this.updateState();
@@ -22,15 +22,18 @@ class App extends Component {
         this.setState({ citizens: response.data.Brastlewark });
       })
       .catch(err => console.log(`There was an error: ${err}`));
-  };
+  }
+
+
 
   render() {
+   
     return (
       <>
-      <header>
-        <nav>
-          <h1>Gnomes City Census</h1>
-        </nav>
+        <header>
+          <nav>
+              <h1>Gnomes City Census</h1>
+          </nav>
         </header>
         <Switch>
           <Route
@@ -39,10 +42,9 @@ class App extends Component {
             render={() => <Gnomes citizens={this.state.citizens} />}
           />
         </Switch>
-     
       </>
     )
   }
 }
 
-export default App;
+export default App
