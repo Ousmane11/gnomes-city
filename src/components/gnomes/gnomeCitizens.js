@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./gnomes.css"
 
+
 class Gnomes extends Component {
   constructor(props) {
     super(props);

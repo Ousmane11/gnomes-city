@@ -7,9 +7,6 @@ nav {
     position: fixed;
     background-color: rgba(10,10,10, 0.95);
     width: 100vw;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 body {
@@ -30,9 +27,10 @@ main{
 h1 {
     font-family: 'Passion One', cursive;
     color: #fffafa;
-    text-align: center;
+    text-align: left;
     font-size: 3em;
     line-height: 2em;
+    margin-left: 2%;
 }
 a{
     color: #21252d;

@@ -4,6 +4,8 @@
     margin-top: 40px;
     position: fixed;
     display:flex;
+  
+    
     
 }
 
@@ -15,6 +17,7 @@
         z-index: 1000;
         right: 0;
         top: 50px;
+        padding-right: 50px;
     }
 }
 
