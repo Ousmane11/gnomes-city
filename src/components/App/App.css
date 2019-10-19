@@ -1,16 +1,36 @@
 
+header{
+    height: 70px;
+}
+nav {
+    position: fixed;
+    background-color: rgba(10,10,10, 0.95);
+   
+}
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: #fff;
+    color: #111111;
     background-color: #21252d;
-    margin: 0 30%;
+    margin: 70px 0 30%;
 }
+
+
 
 h1 {
     font-family: 'Passion One', cursive;
-    color: #fff;
+    color: #fffafa;
     text-align: center;
     font-size: 3em;
     line-height: 2em;
+}
+a{
+    color: #21252d;
+    text-decoration: none;
+}
+a:hover {
+    color: #21252d;
+    font-size: 1.2em;
+    transition: 0.2s;
+    text-decoration: none;
 }

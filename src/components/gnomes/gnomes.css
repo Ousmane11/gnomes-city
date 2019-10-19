@@ -1,0 +1,64 @@
+.grid {
+    margin-top: 90px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: #fffafa;
+    border: 1px solid #111111;
+    border-radius: 10px;
+}
+
+figure .image {
+    width: 60vw;
+    margin-bottom: 5%;
+
+
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 3%
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.3em;
+    color: #111111
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 1px;
+
+}
+
+li {
+    margin-bottom: 2%;
+    font-size: 1.3em;
+}
+
+.card-box {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobs {
+    width: 40vw;
+    justify-content: flex-start;
+}
+
+.friends {
+    width: 45vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
