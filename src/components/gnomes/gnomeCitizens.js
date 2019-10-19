@@ -5,7 +5,7 @@ class Gnomes extends Component {
   constructor(props) {
     super(props);
     this.state = { citizens: [] }
-    this.filter = false;
+    this.filter = false
   }
 
   static getDerivedStateFromProps(props, state) {
