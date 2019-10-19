@@ -3,6 +3,7 @@ import "./App.css";
 import CitizenServices from "../../services/brastlewark.services";
 import { Switch, Route } from "react-router-dom";
 
+
 import Gnomes from "../Gnomes/gnomeCitizens";
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
             render={() => <Gnomes citizens={this.state.citizens} />}
           />
         </Switch>
+     
       </>
     )
   }

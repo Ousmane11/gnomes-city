@@ -1,29 +1,32 @@
-import React, { Component } from "react";
-import "./gnomes.css";
+import React, { Component } from "react"
+import "./gnomes.css"
 
 class Gnomes extends Component {
   constructor(props) {
     super(props);
-    this.state = { citizens: [] };
+    this.state = { citizens: [],
+    }
   }
+  
 
   static getDerivedStateFromProps(props, state) {
     console.log(props);
     if (props.currentRow !== state.lastRow) {
     }
-    return { citizens: props.citizens };
+    return { citizens: props.citizens }
   }
 
   render() {
     return (
       <>
+      < main>
+      
         {this.state.citizens && this.state.citizens.map(elm => 
+        
             <div className="grid" id={elm.id} key={elm.id}>
               <figure className="image">
                 <img alt="profileImage" src={elm.thumbnail}></img>
-
                   <h2>{elm.name}</h2>
-                
               </figure>
 
               <ul>
@@ -35,9 +38,10 @@ class Gnomes extends Component {
               <div className="card-box">
                    <div className="jobs">
                         <h3>Jobs</h3>
-                        <ul>
-                          {elm.professions.map(jobs =>  <li>{jobs}</li>)}
-                        </ul>
+                
+                          {elm.professions.map((jobs, idx) =>
+                            <p>{jobs} </p>)}
+                  
                    </div>
    
                    <div className="friends">
@@ -45,10 +49,17 @@ class Gnomes extends Component {
                        {elm.friends.length <= 0 ? <p>Has no friends</p> :
                        <p>{elm.friends.map(friends => friends )}</p>
                        }
+                       
                    </div>
                 </div>
             </div>
-          )})}
+                      
+          )}
+        
+          </main>
+          
+        
+          )}
       </>
     )
   }

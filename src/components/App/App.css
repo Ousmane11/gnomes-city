@@ -1,10 +1,12 @@
 
 header{
     height: 70px;
+    width: 100vw;
 }
 nav {
     position: fixed;
     background-color: rgba(10,10,10, 0.95);
+    width: 100vw;
    
 }
 
@@ -13,6 +15,12 @@ body {
     color: #111111;
     background-color: #21252d;
     margin: 70px 0 30%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 
